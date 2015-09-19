@@ -158,7 +158,7 @@
                     soundTransform = this._channel.soundTransform;
                 }
 
-                this._channel                = this._sound.play(position);
+                this._channel                = this._sound.play(position * 1000);
                 this._channel.soundTransform = soundTransform;
                 this._channel.addEventListener(Event.SOUND_COMPLETE, this._onsoundcomplete, false, 0, true);
 
@@ -240,10 +240,6 @@
 
         public function get currentTime():Number {
             return this._currentTime;
-        }
-
-        public function get currentPosition():Number {
-            return this._currentPosition;
         }
 
         public function set currentTime(currentTime:Number):void {
