@@ -89,3 +89,8 @@ HTML5 HTMLMediaElement Simulator by ActionScript 3.0
         // do something ...
     };
   
+## License
+  
+Copyright (c) 2014 Tomohiro IKEDA (Korilakkuma)  
+Released under the MIT license
+  
