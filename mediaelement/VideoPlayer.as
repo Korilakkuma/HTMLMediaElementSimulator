@@ -50,8 +50,13 @@
         private var _onvolumechange   = function():void {};
 
         public function VideoPlayer(src:String = '') {
-            if (this._netStream is NetStream) {this._netStream.close();}
-            if (this._video     is Video)     {this._video.clear();}
+            if (this._netStream is NetStream) {
+                this._netStream.close();
+            }
+
+            if (this._video is Video) {
+                this._video.clear();
+            }
 
             this.src = src
         }
